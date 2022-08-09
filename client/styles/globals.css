@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'lato', serif;
+}
+
+body {
+  color: var(--off-white);
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 380px;
+  padding: 0;
+}
+
+h1 {
+  color: var(--off-white);
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-md);
+}
+
+p,
+article,
+section {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, u {
+  text-decoration: none;
+}
+

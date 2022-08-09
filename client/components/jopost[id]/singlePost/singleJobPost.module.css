@@ -1,0 +1,107 @@
+.wrapper {
+  margin: 0 auto !important;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 1.5em 1em 1.5em 1em;
+  background-color: #F7F7F7;
+
+}
+
+.rowOneHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  border-left: 5px solid var(--terra);
+}
+
+.wrapper h1 {
+  margin: 1em auto 0.8em auto;
+
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.whenContainer p {
+  font-size: 1.1;
+}
+
+.detailsWrapper {
+  margin: 1em 0;
+  font-size: 1.2em;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  border-left: 5px solid var(--yellow);
+}
+
+.detailsWrapper p {
+  text-transform: capitalize;
+}
+.body {
+  text-align: justify;
+  padding: 0 1.5em;
+  font-weight: 200;
+}
+
+.logo {
+  margin: 0;
+  padding: 0.5em;
+  object-fit: cover;
+  object-fit: cover;
+}
+
+.accordion {
+  letter-spacing: 0px;
+  margin: 2em 0;
+  padding: 0 !important;
+  box-shadow: 0px 0 1px rgba(0, 0, 0, 0.1);
+  min-height: 20px;
+  border-radius: 0 !important;
+  padding-left: 1em;
+}
+
+.accHeader {
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.formTitle {
+  padding: 1em;
+  margin: 2em 0 3em 0;
+  font-size: 1.2em;
+  font-weight: 100;
+  text-align: justify;
+}
+
+@media (min-width: 518px) {
+  .whenContainer {
+    width: 20%;
+    display: inline-block;
+    font-weight: 100;
+  }
+
+  .who {
+    color: var(--terra);
+    font-weight: 300;
+  }
+
+  .wrapper h1 {
+    width: 80%;
+    text-overflow: wrap;
+    display: inline-block;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 837px) {
+  .detailsWrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .wrapper {
+    padding: 2em 4em 0 4em;
+  }
+}

@@ -1,0 +1,235 @@
+.overlay {
+  background-image: url(/images/hero.jpeg);
+  height: 80%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.icons {
+  height: 70px;
+  width: auto;
+
+}
+
+.infoHeader {
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0.4em auto;
+  padding-bottom: 0.2em;
+  color: #636e72;
+}
+.infoHeaderSecondary {
+  font-size: 2.1em;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 1.1em;
+  width: 75%;
+  margin: 1em auto;
+  color: #636e72;
+}
+.iconText {
+  text-align: center;
+  color: rgb(224, 224, 224);
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.infoText {
+  text-align: justify;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.1em;
+  padding: 0.8em;
+}
+
+.infoText2 {
+  text-align: justify;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.SeniorsPhoto {
+  object-fit: contain;
+  margin: 1em auto 1.5em auto;
+}
+
+.fourBox {
+  margin: 0 auto;
+  padding: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  align-items: center;
+  justify-items: center;
+  max-width: 80%;
+}
+
+.fourBox div:nth-child(1) {
+  text-align: center;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 250px;
+}
+.fourBox div:nth-child(2) {
+  text-align: center;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 250px;
+}
+.fourBox div:nth-child(3) {
+  text-align: center;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 250px;
+}
+.fourBox div:nth-child(4) {
+  text-align: center;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  max-width: 500px;
+  min-height: 250px;
+}
+
+.infoHeaderSmall {
+  color: #d7b37c;
+  text-transform: capitalize;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0.1em auto 0em auto;
+  /* border-bottom: 1px solid #AF6B58;
+  padding-bottom: 0.5em; */
+  width: 100%;
+}
+
+.lineIcon {
+  margin: -1.5em auto -3em auto;
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+  height: 100px;
+}
+
+.btnsFlex {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.tickBoxes {
+  margin: 0;
+  padding: 0 0.5em 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style-type: none;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.1em;
+  min-width: 100%;
+}
+.tickBoxes li {
+  margin: 0.2em 0;
+}
+
+.tickBoxes li::before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin: 0.5em 1em 0.5em 0;
+  vertical-align: middle;
+  background-image: url("/images/tick.svg");
+}
+
+.backgroundSlogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.295);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  
+}
+.slogan {
+  position: absolute;
+  top: 47%;
+  left:75%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 6em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #FFF;
+  margin: 0;
+  opacity: 0.8;
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 961px) {
+  .infoText2 {
+    margin: 2em 0 0 0;
+    padding: 1em;
+  }
+ 
+}
+
+@media (max-width: 959px) {
+
+  .slogan {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .fourBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  
+  
+}
+
+@media (max-width: 600px) {
+  .infoHeader {
+    font-size: 2.1em;
+    margin-top: 1em;
+  }
+  .overlay {
+    height: 70vh;
+  }
+  
+}
+
+@media (min-width: 1680px) {
+  .tickBoxes {
+    padding: 0 4em 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+}

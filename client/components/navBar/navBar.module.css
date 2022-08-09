@@ -1,0 +1,165 @@
+.logoutText {
+  color: var(--yellow);
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 1em;
+  object-fit: contain;
+  margin-bottom: 0.4em;
+}
+
+.NavBarItems {
+  background-color: var(--lightGreen);
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-weight: 800;
+}
+
+.modalLogout {
+  margin: 2em;
+  background-color: var(--off-white);
+  opacity: 0.9;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+  text-align: center;
+  padding: 3em;
+  font-size: 1.4em;
+  outline: none;
+}
+
+.menuicon {
+  font-size: var(--font-size-lg);
+  color: var(--yellow);
+  display: none;
+}
+
+.navMenu {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 5px;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.navMenu * {
+  font-size: var(--font-size-md);
+  font-weight: 300;
+  color: var(--yellow);
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  margin-right: 0.9em;
+}
+
+.activeLink a {
+  color: var(--yellow);
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid var(--green);
+  margin-bottom: 3em;
+}
+
+@media screen and (min-width: 1060px) {
+  .titleLogo {
+    display: none;
+  }
+  .NavBarItems {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .navMenu * {
+    margin-right: 0em;
+  }
+
+  .activeLink {
+    padding-bottom: 0.4em;
+
+    margin: 1em;
+  }
+  .NavBarItems {
+    position: relative;
+  }
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 102vh !important;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .NavBarItemsActive:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 200vh;
+    width: 200vw;
+    background-color: rgb(37, 37, 37);
+  }
+  .navMenu.active {
+    padding: 0;
+    background-color: rgba(12, 12, 12);
+    left: 0;
+    opacity: 1;
+    transition: all 0.7s ease;
+    z-index: 1;
+  }
+
+  .NavBarItemsActive {
+    position: fixed !important;
+  }
+
+  .navLinks {
+    text-align: center;
+    width: 100%;
+    display: table;
+  }
+
+  .navbarlogo {
+    padding: 0 0 4em 0.9em;
+  }
+
+  .titleLogo {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 2em;
+    font-family: Montez, cursive;
+    color: var(--yellow);
+  }
+
+  .menuicon {
+    display: block;
+    position: absolute;
+    font-size: 2.3em;
+    top: 10px;
+    right: 0px;
+    transform: translate(-100%, 50%);
+    z-index: 99;
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+  
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-height: 100vh;
+ 
+    }
+
+    table td,
+    table th {
+      width: auto;
+      border: 1px solid rgb(102, 102, 102);
+      padding: 8px;
+      font-weight: 200;
+     
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+      background-color: #ddd;
+    }
+
+    table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #9a695a;
+      color: rgb(41, 41, 41);
+    }
+
+    h4 {
+      font-weight: 100;
+      font-size: 1em;
+      margin: 0;
+    }
+  </style>
+
+  <meta charset="utf-8" />
+  <title>Roster</title>
+</head>
+
+<body>
+ 
+  <h4>Timesheet For: {{users.carer}}</h4><br />
+  <h4>Client Name: {{users.client}}</h4><br />
+  <h4>Address: {{users.address}}</h4><br />
+  <h4>Phone: {{users.phone}}</h4><br />
+  <h4>Timesheet for Week Beginning: {{users.from}}/2022</h4><br />
+  <h4>Timesheet for Week Ending: {{users.to}}/2022</h4><br />
+
+  <table>
+
+    <tr>
+      <th>Day</th>
+
+      <th>Start</th>
+      <th>Finish</th>
+      <th>Total</th>
+      <th>Notes</th>
+      <th>Km's</th>
+      <th>Sign</th>
+    </tr>
+
+
+    <tr>
+      <td>
+    {{users.day1}}
+      </td>
+      <td>
+        {{users.monday.start}}
+      </td>
+      <td>
+        {{users.monday.finish}}
+      </td>
+      <td>
+        {{users.monday.total}}
+      </td>
+      <td>
+        {{users.monday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        {{users.day2}}
+      </td>
+      <td>
+        {{users.tuesday.start}}
+      </td>
+      <td>
+        {{users.tuesday.finish}}
+      </td>
+      <td>
+        {{users.tuesday.total}}
+      </td>
+      <td>
+        {{users.tuesday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        {{users.day3}}
+      </td>
+      <td>
+        {{users.wednesday.start}}
+      </td>
+      <td>
+        {{users.wednesday.finish}}
+      </td>
+      <td>
+        {{users.wednesday.total}}
+      </td>
+      <td>
+        {{users.wednesday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+    <tr>
+      <td>
+        {{users.day4}}
+      </td>
+      <td>
+        {{users.thursday.start}}
+      </td>
+      <td>
+        {{users.thursday.finish}}
+      </td>
+      <td>
+        {{users.thursday.total}}
+      </td>
+      <td>
+        {{users.thursday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+    <tr>
+      <td>
+        {{users.day5}}
+      </td>
+      <td>
+        {{users.friday.start}}
+      </td>
+      <td>
+        {{users.friday.finish}}
+      </td>
+      <td>
+        {{users.friday.total}}
+      </td>
+      <td>
+        {{users.friday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+    <tr>
+      <td>
+        {{users.day6}}
+      </td>
+      <td>
+        {{users.saturday.start}}
+      </td>
+      <td>
+        {{users.saturday.finish}}
+      </td>
+      <td>
+        {{users.saturday.total}}
+      </td>
+      <td>
+        {{users.saturday.notes}}
+      </td>
+      <td>
+        
+          </td>
+    
+          <td>
+           
+          </td>
+    </tr>
+
+    <tr>
+      <td>
+        {{users.day7}}
+      </td>
+      <td>
+        {{users.sunday.start}}
+      </td>
+      <td>
+        {{users.sunday.finish}}
+      </td>
+      <td>
+        {{users.sunday.total}}
+      </td>
+      <td>
+        {{users.sunday.notes}}
+      </td>
+
+      <td>
+    
+      </td>
+
+      <td>
+       
+      </td>
+    </tr>
+
+
+  
+
+
+
+
+  </table>
+
+</body>
+
+</html>

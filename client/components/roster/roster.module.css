@@ -1,0 +1,144 @@
+.container {
+  padding: 1em;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: #1f1f1f;
+}
+
+.tableWrapper {
+  margin: 0 auto 1em auto;
+  overflow-x: scroll !important;
+  height: auto;
+  padding: 1em;
+}
+
+.divider {
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 0.4em;
+}
+
+.table {
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th {
+  min-width: 180px !important;
+}
+
+.table td,
+.table th {
+  padding: 8px;
+  font-weight: 200;
+}
+
+.table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.table tr:nth-child(odd) {
+  background-color: #e7e7e7;
+}
+
+.table tr:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--terra);
+  color: white;
+}
+
+.carerContainer {
+  margin: 1em auto;
+  max-width: 400px;
+}
+
+.clientContainer {
+  margin: 1em auto;
+  max-width: 400px;
+}
+
+.daysContainer {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+}
+
+.day {
+  margin: 0.5em 0;
+}
+
+.adContainer {
+  margin: 1.5em 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 400px;
+}
+
+.selection li {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 300;
+  text-align: center;
+  width: 100% !important;
+  margin: 0.5em auto;
+  border-radius: 10px;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 0.5em;
+}
+
+.name {
+  color: #ffffff;
+
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.boxHeading {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.3em;
+  font-weight: 200;
+  color: #d7b37c;
+}
+
+.km {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.whenWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 962px) {
+  .name {
+  }
+}
+
+@media (max-width: 869px) {
+  .whenWrapper {
+    flex-direction: column;
+  }
+  .divider {
+   display: none;
+  }
+}
